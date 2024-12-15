@@ -10,7 +10,7 @@ then
 fi
 
 # Ensure the script is being run in the correct directory
-TARGET_DIR="/home/aj/Documents/notes/Notes"
+TARGET_DIR="$HOME/Documents/notes/Notes"
 if [ "$PWD" != "$TARGET_DIR" ]; then
     echo "Error: This script must be run in the directory: $TARGET_DIR"
     exit 1
