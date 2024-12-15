@@ -25,7 +25,7 @@ fi
 
 # Commit with predefined message
 echo "Committing changes with message 'updated notes'..."
-git commit -m "udated notes"
+git commit -m "udated notes. pushed via notes-git.sh"
 if [ $? -ne 0 ]; then
     echo "Error: commit failed."
     exit 1
