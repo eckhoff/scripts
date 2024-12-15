@@ -7,8 +7,6 @@ NOTE_FILE="$HOME/Documents/notes/Notes/Quick-Capture.md"
 mkdir -p "$(dirname "NOTE_FILE")"
 touch "$NOTE_FILE"
 
-set -f
-
 # if the argument --list is passed print quick-capture.md in terminal
 if [[ "$1" == "--list" ]]; then
     if [[ ! -s "$NOTE_FILE" ]]; then
@@ -25,8 +23,6 @@ if [ -z "$*" ]; then
     echo "No text provided. Usage: qq <text>"
     exit 1
 fi
-# old code
-# echo "[$(date '+%Y-%m-%d')] $*" >> "$NOTE_FILE"
 
 # append the input text to the note to Quick-Capture.md
 echo "* $*" >> "$NOTE_FILE"
